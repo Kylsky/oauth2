@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.authentication.dao.ClientMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.authentication.model.Client">
+        <id column="id" property="id" />
+        <result column="client_id" property="clientId" />
+        <result column="client_secret" property="clientSecret" />
+        <result column="name" property="name" />
+        <result column="scope" property="scope" />
+        <result column="autoapprove" property="autoapprove" />
+        <result column="access_token_validity" property="accessTokenValidity" />
+        <result column="refresh_token_validity" property="refreshTokenValidity" />
+        <result column="authorities" property="authorities" />
+        <result column="status" property="status" />
+    </resultMap>
+
+</mapper>
